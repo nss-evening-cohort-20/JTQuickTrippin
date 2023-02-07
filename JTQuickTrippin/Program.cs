@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, Yogi!");
+            var app = new QuickTrippinApp();
+            app.Run();
         }
     }
 }
