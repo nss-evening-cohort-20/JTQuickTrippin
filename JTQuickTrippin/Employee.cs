@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace JTQuickTrippin
 {
-    internal class Employee
+    public class Employee
     {
+        public string name { get; set; }
+        public int age { get; set; }
+        public int storeId { get; set; }
+
+    }
+
+    public class Manager : Employee
+    {
+
+    }
+
+    public class AssistantManager : Employee
+    {
+
     }
 }
