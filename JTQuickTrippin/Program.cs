@@ -31,10 +31,10 @@ namespace JTQuickTrippin
                     option = int.Parse(Console.ReadLine());
                 }
                 catch { }
-                if (option == 1) { Console.WriteLine("Enter district sales"); }
-                else if(option == 2) { Console.WriteLine("Generating report"); }
+                if (option == 1) { EnterSales(); }
+                else if(option == 2) { GenerateReport(); }
                 else if (option == 3) { AddEmployee(); }
-                else if (option == 4) { Console.WriteLine("Add store/district"); }
+                else if (option == 4) { AddStore(); }
                 else if (option == 5) { break; }
                 else { option = 0; }
             }
@@ -45,9 +45,27 @@ namespace JTQuickTrippin
 
 
         }
+
+        static void EnterSales()
+        {
+            Console.WriteLine("Enter district sales");
+
+        }
+
+        static void GenerateReport()
+        {
+            Console.WriteLine("Generating report");
+        }
         static void AddEmployee()
         {
             Console.WriteLine("Add new employee");
         }
+
+        static void AddStore()
+        {
+            Console.WriteLine("Add store/district");
+        }
+
+
     }
 }

@@ -21,13 +21,6 @@ namespace JTQuickTrippin
             this.storeId = storeId;
         }
 
-        public void GetEmployee()
-        {
-            Console.WriteLine("Employee name: " + name);
-            Console.WriteLine("Age " + age);
-            Console.WriteLine("Store ID " + storeId);
-        }
-
         //public string getName()
         //{
         //    return name;
