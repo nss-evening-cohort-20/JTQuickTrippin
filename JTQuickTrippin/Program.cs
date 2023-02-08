@@ -59,6 +59,14 @@ namespace JTQuickTrippin
         static void AddEmployee()
         {
             Console.WriteLine("Add new employee");
+            Employee newEmployee = new Employee();
+            Console.WriteLine("Enter Employee name:");
+            newEmployee.name = Console.ReadLine();
+            Console.WriteLine("Enter employee age:");
+            newEmployee.age = int.Parse (Console.ReadLine());
+            Console.WriteLine("Enter employee store ID:");
+            newEmployee.storeId= int.Parse (Console.ReadLine());
+            newEmployee.EnteredEmployee();
         }
 
         static void AddStore()
