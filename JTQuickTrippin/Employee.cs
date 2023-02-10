@@ -8,17 +8,27 @@ namespace JTQuickTrippin
 {
     public class Employee
     {
-        string name { get; set; }
-        int age { get; set; }
-        int storeId { get; set; }
+        public string name { get; set; }
+        public int age { get; set; }
+        public int storeId { get; set; }
 
 
 
-        public Employee(string name, int age, int storeId)
+        //public Employee(string name, int age, int storeId)
+        //{
+        //    this.name = name;
+        //    this.age = age;
+        //    this.storeId = storeId;
+        //}
+
+        public void EnteredEmployee()
         {
-            this.name = name;
-            this.age = age;
-            this.storeId = storeId;
+            Console.WriteLine("Employee entered:");
+            Console.WriteLine("=================");
+            Console.WriteLine("Name: " + name);
+            Console.WriteLine("Age: " + age);
+            Console.WriteLine("Store ID: " + storeId);
+            Console.Read();
         }
 
         //public string getName()
@@ -51,7 +61,7 @@ namespace JTQuickTrippin
         //    this.storeId = newStoreId;
         //}
 
-        
+
     }
 
 
