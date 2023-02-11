@@ -11,13 +11,35 @@ namespace JTQuickTrippin
         public void Run()
         {
             Console.WriteLine("Quick Trippin App");
+
+            EmployeeRepository employeeRepository = new EmployeeRepository();
             
-            Employee employee = new Employee(id:1, name: "sam", age: 20, wage :25, jobRole: "assistant"  );
+            Employee employeeOne= new Employee(id:1, name: "sam", age: 20, wage :25, jobRole: "assistant"  );
 
-            employee.ToString();
-            Console.WriteLine(employee.ToString());
+            Employee employeeTwo = new Employee(id: 2, name: "mike", age: 22, wage: 23, jobRole: "manager");
 
-           
+            Employee employeeThree = new Employee(id: 3, name: "shaan", age: 28, wage: 27, jobRole: "assistant manager");
+
+
+
+            employeeRepository.AddEmployee(employeeOne);
+            employeeRepository.AddEmployee(employeeTwo);
+            employeeRepository.AddEmployee(employeeThree);
+
+            
+            Console.WriteLine(employeeRepository.GetEmployee(2));
+
+            Console.WriteLine(employeeRepository.GetEmployee(5));
+
+            EmployeeRepository employeeRepository1 = new EmployeeRepository();
+
+            Employee employee4 = new Employee(id: 4, name: "ram", age: 30, wage: 30, jobRole: "associate2");
+
+            employeeRepository1.AddEmployee(employee4);
+
+            Console.WriteLine(employeeRepository.GetEmployee(4));
+
+
         } 
     }
 }
