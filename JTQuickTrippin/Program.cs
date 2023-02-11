@@ -55,6 +55,19 @@ namespace JTQuickTrippin
         static void GenerateReport()
         {
             Console.WriteLine("Generating report");
+            {
+                StoreRepository repository = new StoreRepository();
+                var stores = repository.GetStores();
+                for (int i = 0; i < stores.Count; i++)
+                {
+                    Console.WriteLine(stores[i].StoreId);
+                    Console.WriteLine("Gas Quarterly: " + stores[i].GasQuarterly);
+                    Console.WriteLine("Gas Yearly: " + stores[i].GasYearly);
+                    Console.WriteLine("Retail Quarterly: " + stores[i].RetailQuarterly);
+                    Console.WriteLine("Retail Yearly: " + stores[i].RetailYearly);
+                    Console.ReadLine();
+                }
+            }
         }
         static void AddEmployee()
         {
