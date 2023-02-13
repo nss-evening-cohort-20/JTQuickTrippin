@@ -21,12 +21,48 @@ namespace JTQuickTrippin
             Age = age;
             Wage = wage;
             JobRole = jobRole;
-        
+
         }
 
         public override string ToString()
         {
             return $"id:{Id} name:{Name} wage:{Wage} ";
         }
+
+        //public string getName()
+        //{
+        //    return name;
+        //}
+
+        //public int getAge()
+        //{
+        //    return age;
+        //}
+
+        //public int getStoreId()
+        //{
+        //    return storeId;
+        //}
+
+        //public void setName(string newName)
+        //{
+        //    this.name = newName;
+        //}
+
+        //public void setAge(int newAge)
+        //{
+        //    this.age = newAge;
+        //}
+
+        //public void setStoreId(int newStoreId)
+        //{
+        //    this.storeId = newStoreId;
+        //}
+
+
     }
+
+
+
+
 }
