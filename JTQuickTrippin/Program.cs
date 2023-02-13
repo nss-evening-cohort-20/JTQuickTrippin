@@ -11,7 +11,5 @@ namespace JTQuickTrippin
             app.Run();
         }
 
-
-
     }
 }
